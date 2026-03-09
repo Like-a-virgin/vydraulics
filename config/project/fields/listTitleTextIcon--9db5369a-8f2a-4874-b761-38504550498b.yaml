@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: listTitleTextIcon
+instructions: null
+name: 'Lijst titel, tekst en icoon'
+searchable: false
+settings:
+  createButtonLabel: 'Nieuwe item toevoegen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 2c01efec-a28c-48e1-8739-a6349de38b0e # list item
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -56,7 +56,17 @@ fieldLayouts:
         uid: 8e4c818d-6e54-46cd-8be2-60569c18c377
         userCondition: null
       -
-        elementCondition: null
+        elementCondition:
+          class: craft\elements\conditions\entries\EntryCondition
+          conditionRules:
+            -
+              class: craft\elements\conditions\entries\SectionConditionRule
+              operator: ni
+              uid: e9222625-2183-458b-aba8-c7b7371bc870
+              values:
+                - 50c7d6c4-07af-4aea-b86a-78d535b81ae4 # Home
+          elementType: craft\elements\Entry
+          fieldContext: global
         elements:
           -
             dateAdded: '2025-10-08T10:46:46+00:00'
@@ -154,6 +164,51 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-10-08T10:46:46+00:00'
+            elementCondition: null
+            heading: Footer
+            type: craft\fieldlayoutelements\Heading
+            uid: 7f1f7d2f-0d5d-4209-8edd-e4adece6090c
+            userCondition: null
+          -
+            dateAdded: '2025-10-08T10:46:46+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+            handle: footNav
+            instructions: null
+            label: 'Tonen in footer navigatie'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5af70cc1-a44d-4ccc-84cd-d3f12c61ced8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-08T10:46:46+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b26636b7-849b-4fb5-b0af-ecdfd309b7c4 # Tekst
+            handle: footLabel
+            instructions: null
+            label: 'Alternatief label footer navigatie'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0efcfab7-f169-48fe-a772-f3c38c0c66ba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T08:58:55+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: ba32e22f-9177-4f1d-a78c-20be755b03af
+            userCondition: null
+          -
             dateAdded: '2026-03-06T11:45:08+00:00'
             editCondition: null
             elementCondition: null
@@ -192,45 +247,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 48ceb09d-805a-44d0-89e0-6d27a9d5126b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-10-08T10:46:46+00:00'
-            elementCondition: null
-            heading: Footer
-            type: craft\fieldlayoutelements\Heading
-            uid: 7f1f7d2f-0d5d-4209-8edd-e4adece6090c
-            userCondition: null
-          -
-            dateAdded: '2025-10-08T10:46:46+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
-            handle: footNav
-            instructions: null
-            label: 'Tonen in footer navigatie'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5af70cc1-a44d-4ccc-84cd-d3f12c61ced8
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-10-08T10:46:46+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: b26636b7-849b-4fb5-b0af-ecdfd309b7c4 # Tekst
-            handle: footLabel
-            instructions: null
-            label: 'Alternatief label footer navigatie'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 0efcfab7-f169-48fe-a772-f3c38c0c66ba
             userCondition: null
             warning: null
             width: 100

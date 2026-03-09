@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: ac529efd-0b0d-4ef9-907a-e2532820a637 # Solutions
+    uid: b6b81eea-4b8a-4445-93a2-4e6d734925cd # Service
 handle: solutions
 maxAuthors: 1
 name: Solutions

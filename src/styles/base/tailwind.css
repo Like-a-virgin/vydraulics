@@ -3,16 +3,18 @@
 @theme {
     /* Colors */
     --color-prim: #b01421;
+    --color-prim-darker: #7F0E18;
     --color-sec: #181716;
     --color-ter: #ececec;
     --color-quat: #3E3E3E;
     --color-black: #181716;
     --color-white: #ffffff;
+    --color-white-darker: #e0e0e0;
     --color-error: #b01421;
     --color-success: #2e7d32;
 
     /* Fonts */
-    --font-headings: "Helvena", sans-serif;
+    --font-heading: "Helvena", sans-serif;
     --font-base: "realist", sans-serif;
 
     /* Font sizes */
@@ -50,5 +52,5 @@
     --spacing-lg: 3.75rem;
     --spacing-xl: 4.5rem;
     --spacing-2xl: 7.5rem;
-    --spacing-3xl: 8.125rem;
+    --spacing-3xl: 8.25rem;
 }

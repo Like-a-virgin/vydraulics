@@ -1,0 +1,3 @@
+{% if section.listType.value %}
+    {% include "_blocks/list/list-" ~ section.listType.value|kebab %}
+{% endif %}

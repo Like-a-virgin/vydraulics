@@ -1,7 +1,11 @@
 .container {
-    @apply w-[90%] px-4 max-w-reg;
+    @apply w-[90%] px-1 max-w-reg;
 }
 
 .container-small {
     @apply max-w-small;
+}
+
+.container-grid {
+    @apply grid grid-cols-12;
 }

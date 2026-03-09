@@ -9,6 +9,22 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-06-24T10:13:50+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 38895421-c276-4257-85fa-c4ccf178ab45 # Type text & media
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73900f79-ad48-4251-a51b-639ff726116b
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-10-17T08:15:07+00:00'
             elementCondition: null
             heading: Tekst
@@ -157,22 +173,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-06-24T10:13:50+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 38895421-c276-4257-85fa-c4ccf178ab45 # Type text & media
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 73900f79-ad48-4251-a51b-639ff726116b
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2025-10-17T07:59:16+00:00'
             editCondition: null
             elementCondition: null
@@ -185,6 +185,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 44aeb71d-1ef0-45ac-a6eb-efb7d9a2af84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T13:42:32+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+            handle: withBg
+            instructions: null
+            label: 'Met achtergrond'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23a18adb-58ae-4b27-a08f-6df3f460b27f
             userCondition: null
             warning: null
             width: 100

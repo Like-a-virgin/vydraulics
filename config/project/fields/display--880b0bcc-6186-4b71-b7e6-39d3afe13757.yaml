@@ -11,21 +11,7 @@ settings:
       __assoc__:
         -
           - label
-          - 'Selecteer een weergave'
-        -
-          - value
-          - ''
-        -
-          - icon
-          - ''
-        -
-          - default
-          - '1'
-    -
-      __assoc__:
-        -
-          - label
-          - Blogs
+          - 'News & updates'
         -
           - value
           - blogs
@@ -39,10 +25,24 @@ settings:
       __assoc__:
         -
           - label
-          - Contact
+          - Solutions
         -
           - value
-          - contact
+          - solutions
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Industries
+        -
+          - value
+          - industries
         -
           - icon
           - ''

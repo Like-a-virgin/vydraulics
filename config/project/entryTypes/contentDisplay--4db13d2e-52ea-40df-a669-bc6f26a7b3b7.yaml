@@ -9,13 +9,83 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-10-08T11:55:41+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 880b0bcc-6186-4b71-b7e6-39d3afe13757 # Weergave
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40504c54-5098-4510-8181-77bf5ff0668b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T11:03:36+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 880b0bcc-6186-4b71-b7e6-39d3afe13757 # Weergave
+                  layoutElementUid: 40504c54-5098-4510-8181-77bf5ff0668b
+                  operator: in
+                  uid: e4b1f09e-2808-42b9-9e59-72715ea3aa16
+                  values:
+                    - blogs
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+            handle: showSome
+            instructions: null
+            label: 'Toon enkele'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a52ef843-aae8-4bc3-b158-d896eab745ca
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T13:59:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+            handle: noTitleText
+            instructions: null
+            label: 'Geen titel en tekst'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a7f0a83f-d5c4-4f6a-a056-f1bd527cb293
+            userCondition: null
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
             dateAdded: '2025-10-08T11:54:23+00:00'
             disabled: false
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+                  layoutElementUid: a7f0a83f-d5c4-4f6a-a056-f1bd527cb293
+                  uid: 07bce445-920d-4bf2-8f01-fc56d6ef6553
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
             id: null
             inputType: null
             instructions: null
@@ -26,7 +96,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            required: true
+            required: false
             size: null
             step: null
             tip: null
@@ -37,18 +107,60 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-10-08T11:55:41+00:00'
+            dateAdded: '2026-03-09T11:04:02+00:00'
             editCondition: null
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+                  layoutElementUid: a7f0a83f-d5c4-4f6a-a056-f1bd527cb293
+                  uid: b7373d3a-8478-4c23-a39f-554a1084e878
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
             elementEditCondition: null
-            fieldUid: 880b0bcc-6186-4b71-b7e6-39d3afe13757 # Weergave
+            fieldUid: 58a18928-e4be-4f0f-8851-7a1fc536130a # Tekst
             handle: null
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 40504c54-5098-4510-8181-77bf5ff0668b
+            uid: fdd82c1a-0566-41e9-bb36-b7f48b6c124c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T14:20:35+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b26636b7-849b-4fb5-b0af-ecdfd309b7c4 # Tekst
+            handle: linkTitle
+            instructions: null
+            label: 'Titel bij link'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8ce3f3e-ca2f-49e9-9afd-c0f0a0e5f150
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T11:04:02+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: bb7becdd-3a77-49f6-bf93-f1fd1d9d8f9a # Link
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a9d1e18-7282-4cf8-84bc-683154d244ca
             userCondition: null
             warning: null
             width: 100
@@ -64,7 +176,7 @@ showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: null
+titleFormat: '{ title ? title : display.value }'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-uiLabelFormat: '{title}'
+uiLabelFormat: '{ title }'

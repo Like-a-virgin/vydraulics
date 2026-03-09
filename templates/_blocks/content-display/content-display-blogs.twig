@@ -1,26 +1,52 @@
-{% set blogs = craft.entries().section('blog').with(['img']).all() %}
+{% if section.showSome %}
+	{% set link = section.linkField %}
+	{% set blogs = craft.entries().section('blog').with(['img']).limit(3).all() %}
+	{% set firstBlog = blogs|slice(0, 1)|first %}
+	{% set otherBlogs = blogs|slice(1, 2) %}
 
-<section class="section {{ index is same as 1 ? 'section-top' }}">
-	<div class="container">
-        {% include "_components/title" with { title: section.title } %}
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
-            {% for item in blogs %}
-                {% set img = item.img.one() %}
-                <a href="{{ item.url }}">
-                    <div>
-                        {% if img %}
-                            {% include "_components/img/img-third" with { img: img } %}
-                        {% endif %}
-                    </div>
-                    <div class="border p-1">
-                        {% if index is same as 1  %}
-                            <h2>{{ item.title }}</h2>
-                        {% else %}
-                            <h3>{{ item.title }}</h3>
-                        {% endif %}
-                    </div>
-                </a>
-            {% endfor %}
-        </div>
-	</div>
-</section>
+	<section class="section {{ index is same as 1 ? 'section-top' }}">
+		<div class="container container-grid items-center">
+			<div class="col-start-2 col-span-4">
+				{% include "_components/title" with { title: section.title, extraClass: 'font-heading font-bold text-md mb-md'} %}
+				<a href="{{ firstBlog.url }}" class="group">
+					<div>
+						<div class="rounded-base overflow-hidden">
+							{% if firstBlog.img.one() %}
+								{% include "_components/asset" with { asset: firstBlog.img.one() } %}
+							{% endif %}
+						</div>
+						<div class="flex flex-row items-end justify-between w-full mt-sm">
+							<h3 class="w-[60%] font-bold font-heading text-sm">{{ firstBlog.title }}</h3>
+							{% include "_components/link" with { noLink: true, label: 'Read more'|t, withArrow: true, noBorderAnimation: true, extraClass: 'text-prim' } %}
+						</div>
+					</div>
+				</a>
+				{% if link %}
+					<div class="mt-xl">
+						<h3>{{ section.linkTitle }}</h3>
+						{% include "_components/link" with { linkField: link, btnStyle: true, withBg: true, withArrow: true, extraClass: 'mt-base' } %}
+					</div>
+				{% endif %}
+			</div>
+			<div class="col-start-8 col-span-4 flex flex-col gap-2xl">
+				{% for item in otherBlogs %}
+					<a href="{{ item.url }}" class="group">
+						<div>
+							<div class="rounded-base overflow-hidden">
+								{% if item.img.one() %}
+									{% include "_components/asset" with { asset: item.img.one() } %}
+								{% endif %}
+							</div>
+							<div class="flex flex-row items-end justify-between w-full mt-sm">
+								<h3 class="w-[60%] font-bold font-heading text-sm">{{ item.title }}</h3>
+								{% include "_components/link" with { noLink: true, label: 'Read more'|t, withArrow: true, extraClass: 'text-prim', noBorderAnimation: true } %}
+							</div>
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% else %}
+	{{ sprig('_sprig-components/blogs')}}
+{% endif %}

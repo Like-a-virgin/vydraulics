@@ -1,8 +1,8 @@
-allowLineBreaksInTitles: true
-color: orange
+allowLineBreaksInTitles: false
+color: null
 description: null
 fieldLayouts:
-  83a97cc4-d6ce-4a39-b503-95ea06688e74:
+  0bac7205-83f5-4085-843f-74cb0ad934ed:
     cardThumbAlignment: end
     tabs:
       -
@@ -13,7 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-10-27T11:34:39+00:00'
+            dateAdded: '2026-03-09T13:19:05+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -32,67 +32,51 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 173cdfc8-604a-4f52-a59e-2b5f37b905b7
+            uid: e7662ebb-b554-46f5-88f1-00f21f555cfb
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2026-03-09T15:22:30+00:00'
+            dateAdded: '2026-03-09T13:20:32+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 7bf8a881-40d9-405e-8ff9-01327db24e82 # Tekst
+            fieldUid: 58a18928-e4be-4f0f-8851-7a1fc536130a # Tekst
             handle: null
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c7c43539-02dd-47f3-a057-465c22f72246
+            uid: 06e9ecb2-79a8-4854-9fa6-9a9b58adf5b6
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2026-03-09T15:22:30+00:00'
+            dateAdded: '2026-03-09T13:20:32+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
-            handle: showContactInfo
-            instructions: null
-            label: 'Contactgegevens tonen'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c9a44213-654c-42c7-92b9-38d26dd194b1
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-10-27T11:36:07+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 9fad849c-33cb-45ee-8437-0998daace584 # Form
+            fieldUid: d5670209-ed06-4feb-a759-387539d6656a # Grafisch
             handle: null
             instructions: null
-            label: Formulier
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 50854f3b-1c17-4588-920f-d69a1acb6b14
+            uid: ad23e2c6-7488-480f-b1ee-c28f8577188d
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9954c1cb-c1d1-40d2-a607-ea9fc9eb38ad
+        uid: 2153764f-6a2e-476e-a78b-6926f32680da
         userCondition: null
     thumbFieldKey: null
-handle: form
+handle: listItem
 hasTitleField: true
-icon: input-pipe
-name: Formulier
-showSlugField: false
+icon: null
+name: 'list item'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

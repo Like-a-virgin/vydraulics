@@ -36,14 +36,52 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+          -
+            dateAdded: '2026-03-09T10:59:05+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 58a18928-e4be-4f0f-8851-7a1fc536130a # Tekst
+            handle: null
+            instructions: null
+            label: Omschrijving
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27536055-a16b-41b5-8533-eccd343bef1c
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'General info'
         uid: cccba4a8-a24c-43f3-ac40-f63af6f2fca6
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-03-09T10:45:54+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 1cb587a7-06a2-43fd-baf9-76c5a3643fa6 # Content Builder
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79a18307-db8d-479f-bf16-a13f4ba92fdd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a59724d2-3c15-4f0d-98e8-8ae43a6664da
+        userCondition: null
     thumbFieldKey: null
-handle: industries
+handle: service
 hasTitleField: true
 icon: null
-name: Industries
+name: Service
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

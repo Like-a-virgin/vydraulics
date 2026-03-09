@@ -1,10 +1,14 @@
 body .fui {
-    &-input {
-        @apply text-black
+    &-label {
+        @apply text-white;
+    }
+
+    &-input, &-select {
+        @apply text-white border border-prim rounded-full bg-transparent px-1.75 py-1 font-base leading-tight;
     }
 
     &-btn {
-        @apply bg-prim border-prim hover:bg-black hover:border-black;
+        @apply rounded-full bg-prim border-prim hover:bg-prim-darker hover:border-prim-darker;
     }
 
     &-error-message {
@@ -20,10 +24,18 @@ body .fui {
     }
 }
 
+body textarea.fui-input {
+    @apply rounded-[1.5rem] min-h-10;
+}
+
 body .fui-error .fui-label, .fui-error .fui-legend, body .fui-input.fui-error, .fui-select.fui-error {
     @apply text-error;
 }
 
+body .fui-checkbox-label {
+    @apply text-white;
+}
+
 body .fui-checkbox input:checked+label:before, .fui-radio input:checked+label:before {
-    @apply bg-prim border-prim
+    @apply bg-transparent border-prim
 }

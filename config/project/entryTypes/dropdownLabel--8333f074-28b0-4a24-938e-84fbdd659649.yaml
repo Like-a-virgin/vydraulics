@@ -45,7 +45,7 @@ fieldLayouts:
           -
             dateAdded: '2026-03-06T13:35:09+00:00'
             elementCondition: null
-            heading: ''
+            heading: Header
             type: craft\fieldlayoutelements\Heading
             uid: 1c2754e2-3a10-4a9a-9e93-60a971aa2668
             userCondition: null
@@ -78,6 +78,29 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: c780bd0c-8cd8-4f25-ab3a-decb1c2bc7e9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T09:01:11+00:00'
+            elementCondition: null
+            heading: ''
+            type: craft\fieldlayoutelements\Heading
+            uid: 359aaa59-efad-48dd-94f2-550b05d290c7
+            userCondition: null
+          -
+            dateAdded: '2026-03-09T09:01:11+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+            handle: footNav
+            instructions: null
+            label: 'Tonen in footer navigatie'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e434190-e94c-4c09-993f-c2fa1666b70d
             userCondition: null
             warning: null
             width: 100

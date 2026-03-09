@@ -1,0 +1,39 @@
+.link, .link-btn {
+    @apply transition w-fit flex flex-row items-center gap-0.5 
+}
+
+.link {
+    @apply relative py-0.5 after:content-[''] after:transition-[width] after:duration-500 after:w-0 after:h-[1px] after:bg-prim after:absolute after:bottom-0 after:left-0 hover:after:w-full;
+}
+
+.link-btn {
+    @apply border-1 rounded-full border-prim py-[0.875rem] px-base hover:bg-prim;
+}
+
+.link-btn--sec {
+    @apply border-white hover:bg-white hover:text-prim;
+}
+
+.link-btn.link-btn--bg {
+    @apply text-white bg-prim hover:bg-prim-darker hover:border-prim-darker;
+}
+
+.link-btn--sec.link-btn--bg {
+    @apply text-black bg-white hover:bg-white-darker hover:border-white-darker;
+}
+
+.link-arrow {
+    @apply transition w-[0.75rem] h-auto group-hover:rotate-45;
+}
+
+.link--selected {
+    @apply text-prim;
+}
+
+.link-card-solution .link{
+    @apply after:w-full group-hover:after:bg-white
+}
+
+.link--no-border-animation {
+    @apply after:w-full
+}

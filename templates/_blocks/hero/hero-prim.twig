@@ -1,17 +1,26 @@
-<section class="section section-nmt relative overflow-hidden min-h-40 md:min-h-50 flex items-center justify-end md:justify-center">
-    {% if section.img.one() %}
-        <div class="absolute top-0 left-0 -z-1 h-full w-full after:content-[''] after:h-full after:w-full after:bg-black/20 after:absolute after:top-0 after:left-0">
-            {% include "_components/img/img-full" with {
-                img: section.img.one(), 
-                extraClass: 'h-full w-full object-cover'
-            } %}
-        </div>
-    {% endif %}
-    <div class="container py-4 text-white">
-        {% include "_components/title" with { title: section.title } %}
-        <p class="max-w-50">{{ section.textMultiple }}</p>
-        {% if section.linkField %}
-            {% include "_components/link" with { linkField: section.linkField, btnStyle: true, extraClass: 'mt-2' } %}
+{% set text = section.ckeSimple %}
+{% set link1 = section.linkField %}
+{% set link2 = section.linkField2 %}
+
+<section class="section section-nmt bg-black text-white">
+    <div class="container container-grid py-2xl">
+        {% include "_components/title" with { title: section.title, extraClass: "leading-tight text-heading font-bold text-lg mb-xl col-start-1 col-span-5" } %}
+        {% if text or link1 or link2 %}
+            <div class="col-start-2 col-span-4">
+                {% if text %}
+                    <div class="max-w-20">{{ text }}</div>
+                {% endif %}
+                {% if link1 or link2 %}
+                    <div class="flex flex-row gap-xs mt-md">
+                        {% if link1 %}
+                            {% include "_components/link" with { linkField: link1, btnStyle: true, withArrow: true } %}
+                        {% endif %}
+                        {% if link2 %}
+                            {% include "_components/link" with { linkField: link1, btnStyle: true, withArrow: true, btnType: 'sec' } %}
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
         {% endif %}
     </div>
 </section>

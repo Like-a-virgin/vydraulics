@@ -31,7 +31,7 @@ button {
 
 /* reCAPTCHA notice */
 .recaptcha-notice {
-  @apply text-xs opacity-60 mt-4;
+  @apply text-white text-xs opacity-40 mt-base;
 
   a {
     @apply underline hover:no-underline;

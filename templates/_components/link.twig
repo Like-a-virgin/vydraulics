@@ -7,15 +7,24 @@
 {% set label = label ?? (linkField ? linkField.label : null) %}
 
 {% set btnStyle = btnStyle ?? false %}
-{% set darkBg = darkBg ?? false %}
+{% set btnType = btnType ?? false %}
+{% set withBg = withBg ?? false %}
+{% set withArrow = withArrow ?? false %}
 {% set noLink = noLink ?? null %}
+{% set noBorderAnimation = noBorderAnimation ?? false %}
 
 {% if noLink %}
-    <div class="group transition  w-fit {{ extraClass }} {{ btnStyle ? 'border border-prim rounded-full px-1.5 py-0.75 hover:bg-prim hover:rounded-[10px]' : 'border-b border-b-prim pb-0.5'}} {{ darkBg ? 'text-white' }} flex gap-0.5 items-center">
+    <div class="group {{ btnStyle ? 'link-btn' : 'link' }} {{ noBorderAnimation ? 'link--no-border-animation' }} {{ btnStyle and btnType ? 'link-btn--' ~ btnType }} {{ btnStyle and withBg ? 'link-btn--bg'}} {{ extraClass }}">
         <span>{{ label }}</span>
+        {% if withArrow %}
+            {{ svg('assets/icons/arrow-top-right.svg')|attr({class:"link-arrow"})}}
+        {% endif %}
     </div>
 {% else %}
-    <a href="{{ url }}" class="group transition w-fit {{extraClass }} {{ btnStyle ? 'border border-prim rounded-full px-1.5 py-0.75 hover:bg-prim' : 'border-b border-b-prim pb-0 h-2.75'}} {{ darkBg ? 'text-white' }} flex gap-0.5 items-center" aria-label="{{ ariaLabel }}" target="{{ target ?? '' }}">
-        {{ label }}
+    <a href="{{ url }}" class="group {{ btnStyle ? 'link-btn' : 'link' }} {{ noBorderAnimation ? 'link--no-border-animation' }} {{ btnStyle and btnType ? 'link-btn--' ~ btnType }} {{ btnStyle and withBg ? 'link-btn--bg'}} {{ extraClass }}" aria-label="{{ ariaLabel }}" target="{{ target ?? '' }}">
+        <span>{{ label }}</span>
+        {% if withArrow %}
+            {{ svg('assets/icons/arrow-top-right.svg')|attr({class:"link-arrow"})}}
+        {% endif %}
     </a>
 {% endif %}

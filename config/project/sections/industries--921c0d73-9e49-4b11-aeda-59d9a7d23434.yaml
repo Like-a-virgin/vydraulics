@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: b6b81eea-4b8a-4445-93a2-4e6d734925cd # Industries
+    uid: b6b81eea-4b8a-4445-93a2-4e6d734925cd # Service
 handle: industries
 maxAuthors: 1
 name: Industries

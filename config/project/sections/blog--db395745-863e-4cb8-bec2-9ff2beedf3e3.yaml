@@ -5,7 +5,7 @@ entryTypes:
     uid: 3e3c8e13-40d3-4a3d-bec8-319341178bcb # Blog
 handle: blog
 maxAuthors: 1
-name: Blog
+name: 'News & updates'
 previewTargets:
   -
     label: 'Primary entry page'

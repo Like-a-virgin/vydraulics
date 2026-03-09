@@ -1,4 +1,4 @@
-allowLineBreaksInTitles: false
+allowLineBreaksInTitles: true
 color: yellow
 description: null
 fieldLayouts:
@@ -8,6 +8,22 @@ fieldLayouts:
       -
         elementCondition: null
         elements:
+          -
+            dateAdded: '2026-03-09T13:18:34+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8f0db651-05cb-4d73-9531-29f24587491d # Lijst type
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b28436f2-3bfa-4892-9297-2d30fb77615c
+            userCondition: null
+            warning: null
+            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -36,15 +52,76 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2026-03-09T13:18:34+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 8f0db651-05cb-4d73-9531-29f24587491d # Lijst type
+                  layoutElementUid: b28436f2-3bfa-4892-9297-2d30fb77615c
+                  operator: in
+                  uid: 149e7705-944e-459b-8262-d83c6fcf9a8e
+                  values:
+                    - faq
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 91a218c7-298e-4670-8058-d50adfc09650 # Lijst titel en tekst
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce3855ee-4dc4-404f-895b-93c72930ef94
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-09T13:21:09+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 8f0db651-05cb-4d73-9531-29f24587491d # Lijst type
+                  layoutElementUid: b28436f2-3bfa-4892-9297-2d30fb77615c
+                  operator: in
+                  uid: 6ed18c16-3d77-47c3-b773-0661f69962d7
+                  values:
+                    - values
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 9db5369a-8f2a-4874-b761-38504550498b # Lijst titel, tekst en icoon
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd7d263c-c7d8-47d3-ae34-5d09d3f466a6
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 1a7c9a4f-fb69-4b82-a5fa-6477b2f7d9e6
+        userCondition: null
+      -
+        elementCondition: null
+        name: Layout
+        uid: f254138c-28c6-43ce-bd3b-f4be31ecccd0
         userCondition: null
     thumbFieldKey: null
 handle: list
 hasTitleField: true
 icon: list
 name: Lijst
-showSlugField: true
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

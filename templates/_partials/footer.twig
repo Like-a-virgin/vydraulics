@@ -1,26 +1,54 @@
 {% set navigation = craft.entries().section('pages').footNav(true).all() %}
 {% set currentUrl = entry is defined and entry ? entry.url : null %}
 
-<footer class="w-full center py-2">
-	<div class="container">
-		<div class="w-10">
-            {% if companyInfo.logo.one() %}
-                <a href="{{ currentSite.baseUrl }}" class="w-full h-2">
-					{% include "_components/asset" with {
-                        asset: companyInfo.logo.one(),
-                        size: 'third',
-                        class: companyInfo.logo.one().extension is same as 'svg' ? 'w-full h-auto' : 'w-full h-full'
-                    } %}
-				</a>
-            {% endif %}
+<footer class="w-full center pt-xl">
+	<div class="container container-grid pb-xl">
+        <div class="w-17.5 col-span-4">
+            <div class="w-15">
+                {% if companyInfo.logo.one() %}
+                    <a href="{{ currentSite.baseUrl }}" class="w-full h-2">
+                        {% include "_components/asset" with {
+                            asset: companyInfo.logo.one(),
+                            size: 'third',
+                            class: companyInfo.logo.one().extension is same as 'svg' ? 'w-full h-auto' : 'w-full h-full'
+                        } %}
+                    </a>
+                {% endif %}
+            </div>
         </div>
-        <nav>
+        <nav class="col-span-8">
             <ul class="flex gap-4">
             {% for item in navigation %}
-                <li><a class="{{ currentUrl == item.url ? 'text-prim' }} hover:text-prim" href="{{ item.url }}"> {{ item.footLabel is not null ? item.footLabel : item.title }}</a></li>
+                <li>
+                    {% if item.type.handle is same as 'dropdownLabel' %}
+                        <span class="block font-bold mb-base">{{ item.title }}</span>
+                        <ul class="flex flex-col gap-0.5">
+                            {% for child in item.children %}
+                                <li>
+                                    <a class="hover:text-prim" href="{{ child.url }}"> {{ child.footLabel is not null ? child.footLabel : child.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% elseif item.showCollection %}
+                        {% set collection = craft.entries().section(item.collection.value).level(1).all() %}
+                        <a class="font-bold hover:text-prim block mb-base" href="{{ item.url }}"> {{ item.footLabel is not null ? item.footLabel : item.title }}</a>
+                        <ul class="flex flex-col gap-0.5">
+                            {% for subItem in collection %}
+                                <li>
+                                    <a class="hover:text-prim" href="{{ subItem.url }}"> {{ subItem.footLabel is not null ? subItem.footLabel : subItem.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <a class="font-bold hover:text-prim" href="{{ item.url }}"> {{ item.footLabel is not null ? item.footLabel : item.title }}</a>
+                    {% endif %}
+                </li>
             {% endfor %}
             </ul>
         </nav>
 	</div>
+    <div>
+
+    </div>
     {% include "_components/required-info" %}
 </footer>

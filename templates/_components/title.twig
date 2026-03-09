@@ -2,7 +2,7 @@
 {% set extraClass = extraClass ?? null %}
 
 {% if index is same as 1 %}
-    <h1 class="{{ extraClass }}">{{ title }}</h1>
+    <h1 class="{{ extraClass }}">{{ title|nl2br }}</h1>
 {% else %}
-    <h2 class="{{ extraClass }}">{{ title }}</h2>
+    <h2 class="{{ extraClass }}">{{ title|nl2br }}</h2>
 {% endif %}
