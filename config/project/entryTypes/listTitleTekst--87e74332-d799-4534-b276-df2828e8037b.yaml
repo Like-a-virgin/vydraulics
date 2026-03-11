@@ -1,0 +1,70 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  c48dd14a-8d86-4961-88d9-a76ed04b4f43:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-03-11T15:10:18+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 953632db-6e7e-4e9c-875e-75218589d1c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-11T15:11:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7bf8a881-40d9-405e-8ff9-01327db24e82 # Tekst
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56f5e03a-698f-4f83-b08a-864066e537e2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1cce146b-b3fd-4787-bbcd-704f9bf2ae91
+        userCondition: null
+    thumbFieldKey: null
+handle: listTitleTekst
+hasTitleField: true
+icon: null
+name: 'Lijst titel en tekst'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{ title ? title : ckeSimple|striptags|truncate(100) }'

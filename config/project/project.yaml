@@ -1,4 +1,4 @@
-dateModified: 1773239921
+dateModified: 1773242131
 elementSources:
   craft\elements\Entry:
     -
@@ -280,6 +280,7 @@ meta:
     58a18928-e4be-4f0f-8851-7a1fc536130a: Tekst # Tekst
     72c36e6e-97b8-4b29-8ded-00c809b5d74c: 'Afgerond nummer' # Afgerond nummer
     83e21b02-216d-4f8e-ad37-891602724017: 'Herbruikbare blokken' # Herbruikbare blokken
+    87e74332-d799-4534-b276-df2828e8037b: 'Lijst titel en tekst' # Lijst titel en tekst
     89e06ce2-ff33-4cd0-97d9-8d3ff401aaa4: '404' # 404
     91a218c7-298e-4670-8058-d50adfc09650: 'Lijst titel en tekst' # Lijst titel en tekst
     266ced0e-c3ba-43c6-915a-b36a12ff5665: Grafisch # Grafisch

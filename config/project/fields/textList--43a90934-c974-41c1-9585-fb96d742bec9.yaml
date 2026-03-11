@@ -4,34 +4,26 @@ instructions: null
 name: 'Tekst Lijst'
 searchable: false
 settings:
-  addRowLabel: 'Add a row'
-  columns:
-    __assoc__:
-      -
-        - col1
-        -
-          __assoc__:
-            -
-              - heading
-              - Tekst
-            -
-              - handle
-              - text
-            -
-              - width
-              - ''
-            -
-              - type
-              - multiline
-  defaults:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
     -
       __assoc__:
         -
-          - col1
-          - ''
-  maxRows: null
-  minRows: null
-  staticRows: false
+          - uid
+          - 87e74332-d799-4534-b276-df2828e8037b # Lijst titel en tekst
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
 translationKeyFormat: null
-translationMethod: none
-type: craft\fields\Table
+translationMethod: site
+type: craft\fields\Matrix
