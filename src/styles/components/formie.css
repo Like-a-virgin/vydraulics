@@ -34,6 +34,10 @@ body .fui-checkbox-label {
     @apply text-white;
 }
 
+body .fui-checkbox label:before {
+    @apply bg-transparent border-prim
+}
+
 body .fui-checkbox input:checked+label:before, .fui-radio input:checked+label:before {
     @apply bg-transparent border-prim
 }

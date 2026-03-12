@@ -1,0 +1,28 @@
+{% set timelineItems = section.timeline %}
+<section class="timeline-section bg-ter w-full py-2xl">
+    <div class="swiper timeline-swiper [overflow:visible!important]">
+        <div class="swiper-wrapper">
+            {% for item in timelineItems %}
+                <div class="group swiper-slide relative flex items-center py-2xl">
+                    <div class="absolute left-[calc(50%+20rem)] top-1/2 -translate-y-1/2 font-heading font-bold text-white whitespace-nowrap leading-none pointer-events-none select-none text-[clamp(5rem,15vw,16rem)] transition-transform duration-800 origin-left group-[.swiper-slide-prev]:scale-[1.75]" aria-hidden="true">{{ item.year }}</div>
+                    <div class="container relative z-10">
+                        <div class="mx-auto max-w-40 bg-white/24 backdrop-blur-sm p-lg rounded-base">
+                            <h2 class="font-heading font-bold text-md text-sec">{{ item.title }}</h2>
+                            <p class="mt-sm text-base text-quat">{{ item.text }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex gap-xs justify-end mt-md">
+            <button class="timeline-nav__prev flex items-center justify-center w-2.5 h-2.5 rounded-full border border-prim text-prim bg-transparent cursor-pointer transition-colors hover:bg-prim hover:text-white [&.disabled]:opacity-40 [&.disabled]:cursor-not-allowed" aria-label="Vorige">
+                {{svg('assets/icons/arrow-left.svg')|attr({class:"w-1.5"})}}
+            </button>
+            <button class="timeline-nav__next flex items-center justify-center w-2.5 h-2.5 rounded-full bg-prim text-white border border-prim cursor-pointer transition-colors hover:bg-prim-darker hover:border-prim-darker [&.disabled]:opacity-40 [&.disabled]:cursor-not-allowed" aria-label="Volgende">
+                {{svg('assets/icons/arrow-right.svg')|attr({class:"w-1.5"})}}
+            </button>
+        </div>
+    </div>
+</section>

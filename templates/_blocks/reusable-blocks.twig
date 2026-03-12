@@ -2,6 +2,7 @@
 
 {% for section in sections %}
     {% include "_blocks/" ~ section.type.handle|kebab with {
-        index: index
+        index: index,   
+        isFirst: isFirst      
     }%}
 {% endfor %}

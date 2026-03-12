@@ -1,0 +1,37 @@
+{% set certificateSelect = section.certificateSelect.with(['graphic', 'file']).all() %}
+
+<section class="section">
+    {% if section.onlyLogos %}
+        <div class="container container-grid py-2xl bg-white rounded-base">
+            <div class="col-start-2 col-span-3">
+                {% include "_components/title" with { title: section.title, extraClass: 'mb-md' } %}
+                <p>{{ section.textMultiple }}</p>
+                {% if section.linkField %}
+                    {% include "_components/link" with {
+                        linkField: section.linkField, 
+                        withArrow: true, 
+                        extraClass: 'text-prim mt-md', 
+                        noBorderAnimation: true
+                    } %}
+                {% endif %}
+            </div>
+            <div class="col-start-6 col-span-6 grid grid-cols-3 gap-y-md">
+                {% for item in certificateSelect %}
+                    {% set col = loop.index % 3 %}
+                    <div class="flex {{ col == 1 ? 'justify-start' : col == 2 ? 'justify-center' : 'justify-end' }}">
+                        {{ svg(item.graphic.one())|attr({ class:"h-6.75 w-auto" }) }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <div class="container grid grid-cols-3 gap-2xl">
+            {% for item in certificateSelect %}
+                <div class="flex flex-col gap-base col-span">
+                    <div>{{ svg(item.graphic.one())|attr({ class:"h-6.75 w-auto" }) }}</div>
+                    <div>{{ item.ckeSimple }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>

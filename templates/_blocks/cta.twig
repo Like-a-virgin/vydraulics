@@ -3,7 +3,7 @@
         {% include "_components/title" with { title: section.title, extraClass:'col-start-4 col-span-4' } %}
         <div class="col-start-5 col-span-3 mt-md">{{ section.ckeSimple }}</div>
         {% if section.linkField %}
-            {% include "_components/link" with { linkField: section.linkField, btnStyle: true, extraClass: "mt-md col-start-5 col-span-3" } %}
+            {% include "_components/link" with { linkField: section.linkField, btnStyle: true, extraClass: "mt-md col-start-5 col-span-3", withBg: true, withArrow: true } %}
         {% endif %}
     </div>
 </section>

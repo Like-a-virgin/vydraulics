@@ -108,6 +108,34 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2026-03-12T15:04:54+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 341139fe-1d0b-482a-8988-b43f7db3bd65 # Slider type
+                  layoutElementUid: 18b0a08e-d224-415c-8135-a4655d343a19
+                  operator: in
+                  uid: 0244ae90-90db-4d46-8907-acde78e48b5e
+                  values:
+                    - timeline
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 3ebed73d-416d-457b-9ce2-31d081e1ceb8 # Tijdslijn
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5fa0446f-443a-4b01-b4f8-a18067b30581
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 8c65ae5e-a6a1-4194-a786-9cb47dbf3d56
         userCondition: null

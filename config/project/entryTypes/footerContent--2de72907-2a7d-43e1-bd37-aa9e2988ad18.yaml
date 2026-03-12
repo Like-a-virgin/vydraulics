@@ -1,0 +1,88 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  9516a15f-59eb-491e-814a-7ba3598b4560:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-03-12T15:51:10+00:00'
+            elementCondition: null
+            heading: 'Foote link'
+            type: craft\fieldlayoutelements\Heading
+            uid: 867ed1c5-27d7-4fd3-8251-1e2fbd4fa600
+            userCondition: null
+          -
+            dateAdded: '2026-03-12T15:51:10+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b26636b7-849b-4fb5-b0af-ecdfd309b7c4 # Tekst
+            handle: titleLink
+            instructions: null
+            label: 'Titel Link'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2466a594-f9c7-49d5-b1ed-dc83bd117426
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-12T15:49:18+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: bb7becdd-3a77-49f6-bf93-f1fd1d9d8f9a # Link
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0acef09e-fc62-40e5-af5f-d763778d3555
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-12T15:51:10+00:00'
+            elementCondition: null
+            heading: 'Footer form'
+            type: craft\fieldlayoutelements\Heading
+            uid: 3d859315-8eaa-4601-9377-f45d2dec1b2a
+            userCondition: null
+          -
+            dateAdded: '2026-03-12T15:49:18+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9fad849c-33cb-45ee-8437-0998daace584 # Form
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a9189eb-e942-44f6-8aab-29f0b8175d81
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 01dcca54-fad8-4c80-aa0c-40f92ed5540c
+        userCondition: null
+    thumbFieldKey: null
+handle: footerContent
+hasTitleField: false
+icon: null
+name: 'Footer content'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Footer content'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

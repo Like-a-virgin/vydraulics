@@ -8,7 +8,7 @@
                 {% include "_components/title" with { title: section.title } %}
             </div>
         {% endif %}
-        <div class="col-start-4 col-span-9 {{ withBg ? 'xl:col-start-5 xl:col-span-8' }} md:grid md:grid-cols-2 lg:grid-cols-3 gap-md">
+        <div class="col-start-4 col-span-9 {{ withBg ? 'xl:col-start-5 xl:col-span-8' }} md:grid md:grid-cols-2 lg:grid-cols-3 gap-x-md gap-y-lg">
             {% if withBg %}
                 <div>
                     {% include "_components/title" with { title: section.title } %}

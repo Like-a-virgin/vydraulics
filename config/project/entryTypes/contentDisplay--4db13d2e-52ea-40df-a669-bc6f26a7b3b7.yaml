@@ -220,6 +220,62 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2026-03-12T14:09:56+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 880b0bcc-6186-4b71-b7e6-39d3afe13757 # Weergave
+                  layoutElementUid: 40504c54-5098-4510-8181-77bf5ff0668b
+                  operator: in
+                  uid: b383ce44-b4da-4b31-9604-e49934085489
+                  values:
+                    - certificates
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: b32b2b78-b1da-48cb-a4bc-fed2b16c13ab # Certificaten selecteren
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4aa5fca7-5bd9-421d-8675-caeed814bb3c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-03-12T14:12:24+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 880b0bcc-6186-4b71-b7e6-39d3afe13757 # Weergave
+                  layoutElementUid: 40504c54-5098-4510-8181-77bf5ff0668b
+                  operator: in
+                  uid: abb15dc1-6a63-4039-8be4-6a6122a2c9da
+                  values:
+                    - certificates
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: af908524-48f4-4030-b6b5-619ff14bacdc # Boolean
+            handle: onlyLogos
+            instructions: null
+            label: "Enkel logo's"
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b2ea66a-a5d7-4103-bd98-5971cf813bc9
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 59533a5b-03f6-4a92-af14-40de6695f53a
         userCondition: null

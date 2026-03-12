@@ -5,7 +5,7 @@
         <div class="row-start-1 {{ switch ? 'col-start-8 col-span-4' : 'col-start-1 col-span-3'}} my-md">
             {% include "_components/title" with {
                 title: section.title, 
-                extraClass: 'mb-md'
+                extraClass: 'm-md'
             } %}
             {% if section.ckeSimple %}
                 <div class="cke-simple">
@@ -20,7 +20,7 @@
                         <div>
                             <span class="block text-prim h-2 w-2 rounded-full border border-prim center">{{ svg('assets/icons/check.svg')|attr({ class:"w-1 h-auto" }) }}</span>
                             {% if item.title %}
-                                <h3>{{ item.title }}</h3>
+                                <h3 class="my-base">{{ item.title }}</h3>
                             {% endif %}
                             <div class="mt-xs">{{ item.ckeSimple }}</div>
                         </div>

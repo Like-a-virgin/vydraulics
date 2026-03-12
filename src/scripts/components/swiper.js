@@ -4,8 +4,28 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const slidersBrands = document.querySelectorAll(".brands-slider");
+const slidersTimeline = document.querySelectorAll(".timeline-section");
 
 document.addEventListener("DOMContentLoaded", () => {
+    if (slidersTimeline) {
+        slidersTimeline.forEach((el) => {
+            const swiperEl = el.querySelector(".timeline-swiper");
+            const prevEl = el.querySelector(".timeline-nav__prev");
+            const nextEl = el.querySelector(".timeline-nav__next");
+
+            new Swiper(swiperEl, {
+                modules: [Navigation],
+                speed: 800,
+                slidesPerView: 1,
+                navigation: {
+                    prevEl,
+                    nextEl,
+                    disabledClass: "disabled",
+                },
+            });
+        });
+    }
+
     if (slidersBrands) {
         slidersBrands.forEach((el) => {
             const swiperEL = el.querySelector(".swiper");

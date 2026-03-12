@@ -21,7 +21,7 @@
 									<ul class="absolute left-[50%] top-2 -translate-x-[50%] bg-quat/72 pop-nav" x-show="subNavOpen" x-cloak x-transition @click.outside="subNavOpen = false">
 										{% for child in item.children %}
 											<li class="group">
-												<a class="{{ currentUrl == child.url ? 'link--selected' }} link text-white" href="{{ child.url }}" aria-label="{{ 'Ga naar'|t ~ child.title }}" target="{{ itemType is same as 'external' ? '_blank' : '_self' }}" rel="{{ itemType is same as 'external' ? 'noopener noreferrer' : '' }}" @click="window.innerWidth < 1280 && (open = false)">
+												<a class="{{ currentUrl == child.url ? 'link--selected' }} link border-b border-b-prim text-white" href="{{ child.url }}" aria-label="{{ 'Ga naar'|t ~ child.title }}" target="{{ itemType is same as 'external' ? '_blank' : '_self' }}" rel="{{ itemType is same as 'external' ? 'noopener noreferrer' : '' }}" @click="window.innerWidth < 1280 && (open = false)">
 													<span>{{ child.headLabel is not null ? child.headLabel : child.title }}</span>
 													{{ svg('assets/icons/arrow-top-right.svg')|attr({class:'link-arrow text-prim group-hover:rotate-45'})}}
 												</a>

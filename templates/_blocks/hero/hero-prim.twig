@@ -13,7 +13,7 @@
                 {% if link1 or link2 %}
                     <div class="flex flex-row flex-wrap gap-xs mt-md">
                         {% if link1 %}
-                            {% include "_components/link" with { linkField: link1, btnStyle: true, withArrow: true } %}
+                            {% include "_components/link" with { linkField: link1, btnStyle: true, withArrow: true, withBg: true } %}
                         {% endif %}
                         {% if link2 %}
                             {% include "_components/link" with { linkField: link1, btnStyle: true, withArrow: true, btnType: 'sec' } %}

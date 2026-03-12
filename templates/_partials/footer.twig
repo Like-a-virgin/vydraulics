@@ -4,7 +4,7 @@
 <footer class="w-full center pt-xl">
 	<div class="container container-grid pb-xl">
         <div class="w-17.5 col-span-4">
-            <div class="w-15">
+            <div class="w-15 mb-sm">
                 {% if companyInfo.logo.one() %}
                     <a href="{{ currentSite.baseUrl }}" class="w-full h-2">
                         {% include "_components/asset" with {
@@ -14,6 +14,29 @@
                         } %}
                     </a>
                 {% endif %}
+            </div>
+            <div class="flex flex-col gap-base">
+                {% if footer.linkField %}
+                    <div>
+                        <p class="font-heading font-bold mb-xs">{{ footer.titleLink }}</p>
+                        {% include "_components/link" with {
+                            linkField: footer.linkField, 
+                            withArrow: true, 
+                            btnStyle: true, 
+                            extraClass: 'text-prim'
+                        } %}
+                        
+                    </div>
+                {% endif %}
+                <div>
+                    {% if footer.form.one() %}
+                        {{ craft.formie.renderForm(footer.form.one())}}
+                    {% endif %}
+                </div>
+                <div class="flex flex-row gap-0.5 items-center">
+                    <p class="font-heading font-bold">{{ 'Follow us'|t }}</p>
+                    {% include "_components/socials" %}
+                </div>
             </div>
         </div>
         <nav class="col-span-full xl:col-span-8">

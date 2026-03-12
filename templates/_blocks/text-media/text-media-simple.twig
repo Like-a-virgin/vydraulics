@@ -10,7 +10,7 @@
 				{% include "_components/asset" with { asset: img, size: 'half', class: 'h-full w-full object-cover' } %}
 			</div>
 		{% endif %}
-		<div class="col-span-4 {{ section.switch ? '-order-1 col-start-2' : 'col-start-8' }}">
+		<div class="col-span-4 {{ section.switch ? '-order-1 col-start-2' : 'col-start-8' }} py-md">
 			{% include "_components/title" with { title: section.title, extraClass: 'mb-md' } %}
 			<div>{{ section.ckeSimple }}</div>
 			{% if link1 or link2 %}

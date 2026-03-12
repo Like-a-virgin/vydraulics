@@ -1,4 +1,4 @@
-dateModified: 1773245942
+dateModified: 1773332092
 elementSources:
   craft\elements\Entry:
     -
@@ -170,9 +170,8 @@ elementSources:
             operator: in
             uid: aad970dc-a666-4ce5-977a-9968507ce21e
             values:
-              - 8b9168e7-b427-4475-86d0-3b6073368920
               - b9ccf89e-dfed-4115-885f-a4fa59fe0da5 # Vaste content blog
-              - c9ba7528-d100-4412-bb35-7e0a55196989
+              - 85bea2ee-fce5-41db-9ee4-647737ea75e5 # Footer
         elementType: craft\elements\Entry
         fieldContext: global
       defaultSort:
@@ -180,7 +179,7 @@ elementSources:
         - asc
       defaultViewMode: ''
       key: 'custom:8dac5cc1-3192-412b-a93f-f8b445024940'
-      label: "Vaste content pagina's"
+      label: "Vaste content's"
       page: Entries
       tableAttributes: '-'
       type: custom
@@ -245,10 +244,12 @@ meta:
     1cb587a7-06a2-43fd-baf9-76c5a3643fa6: 'Content Builder' # Content Builder
     2c01efec-a28c-48e1-8739-a6349de38b0e: 'list item' # list item
     2cd779f0-ed42-4b4e-bfc2-b308659a59d3: 'Contact Form' # Contact Form
+    2de72907-2a7d-43e1-bd37-aa9e2988ad18: 'Footer content' # Footer content
     2def35aa-0a50-4a93-b6cf-f5cab621b71e: Auteur # Auteur
     3c87820d-7380-4d79-b2ba-066b52070437: 'Grid item' # Grid item
     3d2950df-c852-41fc-822f-3693d59cb426: Hero # Hero
     3e3c8e13-40d3-4a3d-bec8-319341178bcb: Blog # Blog
+    3ebed73d-416d-457b-9ce2-31d081e1ceb8: Tijdslijn # Tijdslijn
     4b76fc78-7a69-43f2-b727-3c1aa6117b75: Locaties # Locaties
     4db13d2e-52ea-40df-a669-bc6f26a7b3b7: 'Content overzicht' # Content overzicht
     4df51339-725b-4b93-9923-51fd75ff7503: 'Interne link' # Interne link
@@ -280,6 +281,7 @@ meta:
     58a18928-e4be-4f0f-8851-7a1fc536130a: Tekst # Tekst
     72c36e6e-97b8-4b29-8ded-00c809b5d74c: 'Afgerond nummer' # Afgerond nummer
     83e21b02-216d-4f8e-ad37-891602724017: 'Herbruikbare blokken' # Herbruikbare blokken
+    85bea2ee-fce5-41db-9ee4-647737ea75e5: Footer # Footer
     87e74332-d799-4534-b276-df2828e8037b: 'Lijst titel en tekst' # Lijst titel en tekst
     89e06ce2-ff33-4cd0-97d9-8d3ff401aaa4: '404' # 404
     91a218c7-298e-4670-8058-d50adfc09650: 'Lijst titel en tekst' # Lijst titel en tekst
@@ -310,6 +312,7 @@ meta:
     b6b81eea-4b8a-4445-93a2-4e6d734925cd: Service # Service
     b9ccf89e-dfed-4115-885f-a4fa59fe0da5: 'Vaste content blog' # Vaste content blog
     b9cfc53b-27bb-4e61-8f85-d438a0085106: 'Hero stijl' # Hero stijl
+    b32b2b78-b1da-48cb-a4bc-fed2b16c13ab: 'Certificaten selecteren' # Certificaten selecteren
     b26636b7-849b-4fb5-b0af-ecdfd309b7c4: Tekst # Tekst
     b669478b-48d0-44ef-83a2-57b96b2ab019: 'Tekst en media' # Tekst en media
     b2150467-5909-43c9-b0bf-24c286b78544: '404' # 404

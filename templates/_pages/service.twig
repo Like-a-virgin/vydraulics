@@ -1,5 +1,5 @@
 {% set sections = entry.contentBuilder.all() %}
 
 {% for section in sections %}
-    {% include "_blocks/" ~ section.type.handle|kebab with { index: loop.index } %}
+    {% include "_blocks/" ~ section.type.handle|kebab with { index: loop.index, isFirst: loop.first } %}
 {% endfor %}
